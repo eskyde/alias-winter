@@ -1,8 +1,8 @@
 {
-    "name": "ruhrdyne",
+    "name": "alias_winter",
     "version": "1.337",
-    "description": "RuhrDÿne Web Frontend",
-    "author": "Tobias 'eskyde' Hütt",
+    "description": "ALIAS WINTER Web Frontend",
+    "author": "Tobias 'Tobbes' Hütt",
     "private": true,
     "scripts": {
         "client": "webpack --config webpack.config.js",

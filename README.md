@@ -1,3 +1,3 @@
-# ruhrdyne_web_frontend
+# ALIAS_WINTER_WEB_FRONTEND
 
-Markup and Stylesheets for the RuhrDÿne WEB Frontend
+Markup and Stylesheets for the ALIAS WINTER band web content
