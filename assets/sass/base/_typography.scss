@@ -82,7 +82,7 @@ h6 {
 	line-height: 1.5;
 	margin: 0 0 _size(element-margin) 0;
 	text-transform: uppercase;
-	letter-spacing: _font(letter-spacing);
+	letter-spacing: _font(letter-spacing-heading);
 
 	a {
 		color: inherit;
@@ -247,4 +247,9 @@ iframe {
 .lineup {
 	margin: 0.25rem auto;
 	margin-left: 1rem;
+}
+
+.quote {
+	text-transform: initial;
+	font-style: italic;
 }

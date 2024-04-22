@@ -47,8 +47,8 @@
 		width: 5rem;
 		height: 5rem;
 		line-height: 5rem;
-		// border: solid _size(border-width) _color(border);
-		// border-radius: 100%;
+		border: solid _size(border-width) _color(border);
+		border-radius: 100%;
 
 		.icon {
 			&:before {
@@ -95,7 +95,7 @@
 		p {
 			text-transform: uppercase;
 			font-family: _font(family-bahn);
-			font-weight: _font(bold);
+			font-weight: _font(light);
 
 			color: #ddd;
 			letter-spacing: 0.3rem;
