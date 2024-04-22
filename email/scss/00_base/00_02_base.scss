@@ -1,0 +1,94 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: $color-primary;
+    color: $color-text;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+
+    line-height: 1.5rem;
+    letter-spacing: 0.025rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-secondary;
+    letter-spacing: 0.05rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 2.5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+b {
+    font-weight: 500;
+    color: $color-secondary;
+}
+
+hr {
+    margin: 2rem 1rem;
+
+    border: none;
+    border-top: 1px solid #df962b;
+}
+
+a {
+    color: #df962b;
+    text-decoration: dotted;
+}
+
+/* frame */
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-spacing: 0;
+    vertical-align: top;
+    min-width: $min-supported-width;
+    margin: 0 auto;
+
+    background-color: #240024;
+}
+
+tr {
+    vertical-align: top;
+}
+
+td {
+    word-break: break-word;
+    border-collapse: collapse !important;
+    vertical-align: top;
+}

@@ -1,0 +1,12 @@
+table {
+    
+    thead {
+        display: none;
+    }
+
+    text-align: center;
+
+    margin: 0 auto;
+    min-width: $min-supported-width;
+    max-width: $max-width;
+}

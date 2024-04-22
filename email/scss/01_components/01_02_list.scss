@@ -1,0 +1,17 @@
+.list {
+    margin: 2rem auto;
+
+    border-top: 1px solid $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+
+    list-style: lower-greek;
+
+    li {
+        margin: 1rem auto;
+        width: fit-content;
+
+        span {
+            margin: 1rem 2rem;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.color {
+    &.primary {
+        color: _color(primary);
+    }
+
+    &.secondary {
+        color: _color(secondary);
+    }
+
+    &.complementary {
+        color: _color(complementary);
+    }
+}

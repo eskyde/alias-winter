@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "allowUnreachableCode": false,
+      "forceConsistentCasingInFileNames": true,
+      "noUnusedLocals": true,
+      "strictBindCallApply": true,
+      "alwaysStrict": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "noImplicitAny": true,
+      "strictPropertyInitialization": true
+    },
+    "include": [
+      "ts/**/*"
+    ]
+  }
