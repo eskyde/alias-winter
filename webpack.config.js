@@ -14,7 +14,7 @@ module.exports = {
     },
     output: {
         filename: 'client.js',
-        path: path.resolve(__dirname, 'gen/assets/js')
+        path: path.resolve(__dirname, 'gen/alias_winter/assets/js')
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"]

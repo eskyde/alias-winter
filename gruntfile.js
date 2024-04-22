@@ -20,8 +20,7 @@ module.exports = function (grunt) {
           style: 'compressed' // nested, compact, compressed, expanded.
         },
         files: {
-          'gen/assets/css/main.css': 'assets/sass/main.scss', // 'destination': 'source'
-          'email/css/main.css': 'email/scss/main.scss' // 'destination': 'source'
+          'gen/alias_winter/assets/css/main.css': 'assets/sass/main.scss' // 'destination': 'source'
         }
       }
     },
@@ -61,48 +60,45 @@ module.exports = function (grunt) {
           {
             nonull: true,
             src: 'assets/html/template.html',
-            dest: 'gen/index.html',
+            dest: 'gen/alias_winter/index.html',
           },
           { // copy icons
             nonull: false,
             src: 'assets/icon/*',
-            dest: 'gen/assets/icon/',
+            dest: 'gen/alias_winter/assets/icon/',
             flatten: true,
             expand: true,
             filter: 'isFile',
           },
           { // copy favicon
-            nonull: true,
-            src: 'assets/misc/favicon/*',
-            dest: 'gen/',
-            flatten: true,
-            expand: true,
-            filter: 'isFile',
+            cwd: 'assets/misc',  // set working folder / root to copy
+            src: '**/*',           // copy all files and subfolders
+            dest: 'gen/alias_winter/assets/misc',    // destination folder
+            expand: true           // required when using cwd
           },
           { // copy background imgs
-            src: 'assets/img/*',
-            dest: 'gen/assets/img/',
-            flatten: true,
-            expand: true,
-            filter: 'isFile',
+            cwd: 'assets/img',
+            src: '**/*',
+            dest: 'gen/alias_winter/assets/img/',
+            expand: true
           },
           { // copy js framewurxx
             src: 'assets/js/*',
-            dest: 'gen/assets/js/',
+            dest: 'gen/alias_winter/assets/js/',
             flatten: true,
             expand: true,
             filter: 'isFile',
           },
           { // copy web fonts
             src: 'assets/webfonts/*',
-            dest: 'gen/assets/webfonts/',
+            dest: 'gen/alias_winter/assets/webfonts/',
             flatten: true,
             expand: true,
             filter: 'isFile',
           },
           { // copy css
             src: 'assets/css/*',
-            dest: 'gen/assets/css/',
+            dest: 'gen/alias_winter/assets/css/',
             flatten: true,
             expand: true,
             filter: 'isFile',
