@@ -1,0 +1,20 @@
+/* Bar */
+::-webkit-scrollbar {
+    width: _scrollbar(sb-width);
+    height: _scrollbar(sb-height);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    // box-shadow: $global-box-shadow;
+    // -webkit-box-shadow: $global-box-shadow;
+    -webkit-border-radius: _scrollbar(th-radius);
+    border-radius: _scrollbar(b-radius);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: _scrollbar(tr-radius);
+    border-radius: _scrollbar(b-radius);
+    background: _scrollbar(bg);
+}

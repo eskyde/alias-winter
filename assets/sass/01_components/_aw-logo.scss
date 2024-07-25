@@ -1,0 +1,14 @@
+.aw-logo-no-fill,
+.aw-logo-no-fill {
+	fill: none;
+}
+
+.aw-logo-fill {
+	fill: var(--color-secondary) !important;
+}
+
+.aw-logo-no-fill {
+	stroke: var(--color-secondary) !important;
+	stroke-miterlimit: 10;
+	stroke-width: 7px;
+}

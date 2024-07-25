@@ -1,0 +1,35 @@
+// base color sheme
+$color-primary: #fb3;
+$color-secondary: #ddd;
+$color-complementary: #078;
+
+$color-bg: #011;
+$color-bg-alt: #000;
+$bg-overlay: rgba(19, 21, 25, 0.5);
+$bg-overlay-fo: rgba(19, 21, 25, 1);
+
+$color-fg: $color-secondary;
+$color-fg-bold: $color-secondary;
+$color-fg-light: rgba(255, 255, 255, 0.5);
+
+$color-border-bg: rgba(255, 255, 255, 0.075);
+$color-border-bg-alt: rgba(255, 255, 255, 0.175);
+
+// pallette
+:root {
+	--color-primary: #{$color-primary};
+	--color-secondary: #{$color-secondary};
+	--color-complementary: #{$color-complementary};
+
+	--color-bg: #{$color-bg};
+	--color-bg-alt: #{$color-bg-alt};
+	--bg-overlay: rgba(19, 21, 25, 0.5);
+	--bg-overlay-fo: rgba(19, 21, 25, 1);
+
+	--color-fg: #{$color-fg};
+	--color-fg-bold: #{$color-fg-bold};
+	--color-fg-light: rgba(255, 255, 255, 0.5);
+
+	--color-border-bg: rgba(255, 255, 255, 0.075);
+	--color-border-bg-alt: rgba(255, 255, 255, 0.175);
+}

@@ -297,9 +297,7 @@ export class Client {
             const $this: JQuery = $(pElem);
 
             // Close.button
-            $('<div class="close"></div>')
-                .prependTo($this)
-                .on('click', function () {
+            $('.close').on('click', function () {
                     location.hash = '';
                 });
 

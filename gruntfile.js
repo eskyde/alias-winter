@@ -102,6 +102,22 @@ module.exports = function (grunt) {
             flatten: true,
             expand: true,
             filter: 'isFile',
+          },
+          { // copy icons
+            nonull: false,
+            src: 'assets/mp4/*',
+            dest: 'gen/alias_winter/assets/mp4/',
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+          },
+          { // copy icons
+            nonull: false,
+            src: 'assets/svg/*',
+            dest: 'gen/alias_winter/assets/svg/',
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
           }
         ],
       },
