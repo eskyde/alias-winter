@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Bahnschrift';
-  src: url('bahnschrift.eot'); /* IE9*/
+  src: url('../webfonts/bahnschrift.eot'); /* IE9*/
   src:
-    url('bahnschrift.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('bahnschrift.woff2') format('woff2'),
-    /* chrome、firefox */ url('bahnschrift.woff') format('woff'),
-    /* chrome、firefox */ url('bahnschrift.ttf') format('truetype'),
-    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('bahnschrift.svg#Bahnschrift') format('svg'); /* iOS 4.1- */
+    url('../webfonts/bahnschrift.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../webfonts/bahnschrift.woff2') format('woff2'),
+    /* chrome、firefox */ url('../webfonts/bahnschrift.woff') format('woff'),
+    /* chrome、firefox */ url('../webfonts/bahnschrift.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../webfonts/bahnschrift.svg#Bahnschrift') format('svg'); /* iOS 4.1- */
 }

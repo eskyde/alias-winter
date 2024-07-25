@@ -23,6 +23,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="assets/icon/android-icon-144x144.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png">
@@ -52,7 +53,7 @@
 
 	<div class="bg-vid">
 		<!-- bg video -->
-		<video autoplay="true" muted="true" loop="true" controls="none">
+		<video autoplay="true" muted="true" loop="true" preload="auto" poster="assets/img/compressedjpeg/overlay.png">
 			<source src="assets/mp4/awbnw.mp4" type="video/mp4">
 		</video>
 	</div>
@@ -113,12 +114,7 @@
 					</g>
 				</svg>
 			</div>
-			<!-- <div class="content">
-				<div class="inner">
-					<h1>ALIAS WINTER</h1>
-					<p>"Zieht dir die Schuhe aus..." - <span class="quote">Sun Tsu</span></p>
-				</div>
-			</div> -->
+			
 			<nav>
 				<ul>
 					<li><a href="#live">Live</a></li>
@@ -163,9 +159,7 @@
 					</svg>
 				</div>
 
-				<br>
-
-				<h2 class="major">Live</h2>
+				<h1 class="major">Live</h1>
 
 				<br>
 
@@ -182,7 +176,8 @@
 							<tr>
 								<td>21.09.2024</td>
 								<td>Umsonst und draußen : Essen - Frohnhauser-Markt</td>
-								<td><a href="https://ruhrdyne.de/events" target="_blank" class="button primary icon solid fa-info">Infos</a></td>
+								<td><a href="https://ruhrdyne.de/#events" target="_blank"
+										class="button icon solid fa-info">Infos</a></td>
 							</tr>
 						</tbody>
 						<tfoot>
@@ -228,15 +223,20 @@
 
 				<h1 class="major">Contact</h1>
 
-				<div class="facebook">
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/aliaswinter" target="_blank"
-								class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/alias_winter" class="icon brands fa-instagram"><span
-									class="label">Instagram</span></a></li>
-					</ul>
-				</div>
+				<section>
 
+					<p>Mail: info[at]alias-winter[dot]de</p>
+
+					<div class="facebook">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/aliaswinter" target="_blank"
+									class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alias_winter" class="icon brands fa-instagram"><span
+										class="label">Instagram</span></a></li>
+						</ul>
+					</div>
+
+				</section>
 			</article>
 
 			<!-- Impressum -->
@@ -269,9 +269,6 @@
 		</footer>
 
 	</div>
-
-	<!-- BG -->
-	<div class="bg"></div>
 
 	<script type="text/javascript">
 		Client.start();

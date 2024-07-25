@@ -26,14 +26,10 @@ table {
 
 	th {
 		color: _color(fg-bold);
-		font-size: 0.9em;
+		font-size: 1em;
 		font-weight: _font(bold);
 		padding: 0 0.75em 0.75em 0.75em;
 		text-align: left;
-	}
-
-	thead {
-		border-bottom: solid (_size(border-width) * 2) _color(border);
 	}
 
 	tfoot {

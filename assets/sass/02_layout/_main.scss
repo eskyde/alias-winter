@@ -32,7 +32,9 @@
 		}
 
 		.close {
-			display: inline;
+			display: grid;
+			place-content: center;
+
 			position: sticky;
 
 			top: 0;
@@ -46,18 +48,6 @@
 			cursor: pointer;
 			overflow: hidden;
 			white-space: nowrap;
-
-			&:hover {
-				&:before {
-					background-color: _color(border-bg);
-				}
-			}
-
-			&:active {
-				&:before {
-					background-color: _color(border-bg-alt);
-				}
-			}
 
 			svg {
 				width: 24px;

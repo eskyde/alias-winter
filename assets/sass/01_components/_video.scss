@@ -1,9 +1,18 @@
 .bg-vid {
     position: fixed;
-    object-fit: cover;
-    
+
+    overflow: hidden;
+    pointer-events: none;
+
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+
+    video {
+        width: 100vw;
+        height: 100vh;
+
+        object-fit: cover;
+    }
 }
