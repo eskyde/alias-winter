@@ -30,12 +30,12 @@ $size: (
 
 // Font.
 $font: (
-	family-default: (
-		'Source Sans Pro',
-		sans-serif
-	),
 	family-bahn: (
 		'Bahnschrift',
+		sans-serif
+	),
+	family-default: (
+		'Titillium Web',
 		sans-serif
 	),
 	family-fixed: (
@@ -55,7 +55,8 @@ $palette: (
 	secondary: #{var(--color-secondary)},
 	complementary: #{var(--color-complementary)},
 
-	bg: $color-bg,// #{var(--color-bg)},
+	bg: $color-bg,
+	// #{var(--color-bg)},
 	bg-alt: #{var(--color-bg-alt)},
 	bg-overlay: #{var(--bg-overlay)},
 	bg-overlay-fo: #{var(--bg-overlay-fo)},
