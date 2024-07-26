@@ -1,7 +1,5 @@
 // breakpoints.scss v1.0 | @ajlkn | MIT licensed */
 
-// Vars.
-
 /// Breakpoints.
 /// @var {list}
 $breakpoints: ();
@@ -197,7 +195,7 @@ $breakpoints: ();
 }
 
 
-// Breakpoints.
+// define breakpoints
 @include breakpoints(
 	(
 		xlarge: (
