@@ -34,13 +34,13 @@
 		.fade-out & {
 			@include vendor('transition', 'background-color #{$duration-ss} ease-in-out');
 			@include vendor('transition-delay', unset);
-			background-color: #{#{var(--bg-overlay-fo)}};
+			background-color: var(--bg-overlay-fo);
 		}
 
 		.fade-in & {
 			@include vendor('transition', 'background-color #{$duration-ss} ease-in-out');
 			@include vendor('transition-delay', unset);
-			background-color: #{#{var(--bg-overlay)}};
+			background-color: var(--bg-overlay);
 		}
 	}
 
@@ -65,7 +65,7 @@
 
 	body.is-preload & {
 		&:before {
-			background-color: #{var(--color-bg)};
+			background-color: var(--color-bg);
 		}
 	}
 }
