@@ -3,7 +3,7 @@
 // base color sheme
 $color-primary: #ade;
 $color-secondary: #078;
-$color-complementary: #ddd;
+$color-text: #ddd;
 
 $color-bg: #111;
 $color-bg-highlight: rgba(255, 255, 255, 0.1);
@@ -18,7 +18,7 @@ $bg-overlay-fo: rgba(19, 21, 25, 1);
 :root {
 	--color-primary: #{$color-primary};
 	--color-secondary: #{$color-secondary};
-	--color-complementary: #{$color-complementary};
+	--color-text: #{$color-text};
 
 	--color-bg: #{$color-bg};
 	--color-bg-article: #{color.scale($color-bg, $alpha: -20%)};
@@ -27,9 +27,9 @@ $bg-overlay-fo: rgba(19, 21, 25, 1);
 
 	--color-border: #{var(--color-secondary)};
 
-	--color-txt: #{var(--color-complementary)};
+	--color-txt: #{var(--color-text)};
 	--color-txt-bold: #{var(--color-primary)};
-	--color-txt-light: #{lighten($color-complementary, 5%)};
+	--color-txt-light: #{lighten($color-text, 5%)};
 
 	--bg-overlay: #{$bg-overlay};
 	--bg-overlay-fo: #{$bg-overlay-fo};
