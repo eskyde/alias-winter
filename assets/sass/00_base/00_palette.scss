@@ -1,7 +1,7 @@
 @use 'sass:color';
 
 // base color sheme
-$color-primary: #fb3;
+$color-primary: #3de; // #fb3;
 $color-secondary: #078;
 $color-complementary: #ddd;
 
@@ -27,10 +27,10 @@ $bg-overlay-fo: rgba(19, 21, 25, 1);
 	--color-bg-highlight: #{$color-bg-highlight};
 	--color-bg-active: #{$color-bg-active};
 
-	--color-border: #{$color-secondary};
+	--color-border: #{var(--color-secondary)};
 
-	--color-txt: #{$color-txt};
-	--color-txt-bold: #{$color-txt-bold};
+	--color-txt: #{var(--color-complementary)};
+	--color-txt-bold: #{var(--color-primary)};
 	--color-txt-light: #{$color-txt-lighten};
 
 	--bg-overlay: #{$bg-overlay};
