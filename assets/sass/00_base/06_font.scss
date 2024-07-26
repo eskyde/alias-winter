@@ -10,3 +10,15 @@
     /* chrome、firefox */ url('../webfonts/bahnschrift.ttf') format('truetype'),
     /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../webfonts/bahnschrift.svg#Bahnschrift') format('svg'); /* iOS 4.1- */
 }
+
+// font
+$font-weight-light: 300;
+$font-weight-regular: 500;
+$font-weight-bold: 600;
+
+$font-family-default: 'Titillium Web', sans-serif;
+$font-family-bahn: 'Bahnschrift', sans-serif;
+$font-family-mono: 'Courier New', monospace;
+
+$font-letter-spacing: 0.17rem;
+$font-letter-spacing-heading: 0.3rem;

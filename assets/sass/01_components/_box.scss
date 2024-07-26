@@ -1,8 +1,8 @@
 /* Box */
 .box {
-	border-radius: _size(border-radius);
-	border: solid _size(border-width) #{var(--color-border)};
-	margin-bottom: _size(element-margin);
+	border-radius: $size-border-radius;
+	border: solid $size-border-width #{var(--color-border)};
+	margin-bottom: $size-elem-mrgn;
 	padding: 1.5em;
 
 	> :last-child,

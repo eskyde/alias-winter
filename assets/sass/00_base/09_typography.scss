@@ -21,8 +21,8 @@ input,
 select,
 textarea {
 	color: #{var(--color-txt)};
-	font-family: _font(family-default);
-	font-weight: _font(light);
+	font-family: $font-family-default;
+	font-weight: $font-weight-light;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -31,9 +31,9 @@ a {
 	@include vendor(
 		'transition',
 		(
-			'color #{_duration(transition)} ease-in-out',
-			'background-color #{_duration(transition)} ease-in-out',
-			'border-bottom-color #{_duration(transition)} ease-in-out'
+			'color #{$duration-transition} ease-in-out',
+			'background-color #{$duration-transition} ease-in-out',
+			'border-bottom-color #{$duration-transition} ease-in-out'
 		)
 	);
 	border-bottom: dotted 1px #{var(--color-txt-light)};
@@ -48,7 +48,7 @@ a {
 strong,
 b {
 	color: #{var(--color-txt-bold)};
-	font-weight: _font(bold);
+	font-weight: $font-weight-bold;
 }
 
 em,
@@ -60,7 +60,7 @@ p {
 	letter-spacing: 0.125rem;
 	font-size: 1.1rem;
 	line-height: 1.8;
-	margin: 0 0 _size(element-margin) 0;
+	margin: 0 0 $size-elem-mrgn 0;
 }
 
 h2,
@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: _font(bold);
+	font-weight: $font-weight-bold;
 }
 
 h1,
@@ -77,12 +77,12 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: _font(family-bahn);
+	font-family: $font-family-bahn;
 	color: #{var(--color-primary)};
 	line-height: 1.5;
-	margin: 0 0 _size(element-margin) 0;
+	margin: 0 0 $size-elem-mrgn 0;
 	text-transform: uppercase;
-	letter-spacing: _font(letter-spacing-heading);
+	letter-spacing: $font-letter-spacing-heading;
 
 	a {
 		color: inherit;
@@ -90,15 +90,15 @@ h6 {
 	}
 
 	&.major {
-		border-bottom: solid _size(border-width) #{var(--color-border)};
+		border-bottom: solid $size-border-width #{var(--color-border)};
 		width: 100%;
 		padding-bottom: 0.5rem;
-		margin: 0 0 (_size(element-margin) * 1) 0;
+		margin: 0 0 ($size-elem-mrgn * 1) 0;
 	}
 }
 
 h1 {
-	font-weight: _font(light);
+	font-weight: $font-weight-light;
 	font-size: 2.35rem;
 	line-height: 1.3;
 }
@@ -137,16 +137,16 @@ sup {
 }
 
 blockquote {
-	border-left: solid (_size(border-width) * 4) #{var(--color-border)};
+	border-left: solid ($size-border-width * 4) #{var(--color-border)};
 	font-style: italic;
-	margin: 0 0 _size(element-margin) 0;
-	padding: calc(_size(element-margin) / 4) 0 calc(_size(element-margin) / 4) _size(element-margin);
+	margin: 0 0 $size-elem-mrgn 0;
+	padding: calc($size-elem-mrgn / 4) 0 calc($size-elem-mrgn / 4) $size-elem-mrgn;
 }
 
 code {
 	background: #{var(--color-bg-highlight)};
-	border-radius: _size(border-radius);
-	font-family: _font(family-fixed);
+	border-radius: $size-border-radius;
+	font-family: $font-family-mono;
 	font-size: 0.9rem;
 	margin: 0 0.25rem;
 	padding: 0.25rem 0.65rem;
@@ -154,9 +154,9 @@ code {
 
 pre {
 	-webkit-overflow-scrolling: touch;
-	font-family: _font(family-fixed);
+	font-family: $font-family-mono;
 	font-size: 0.9rem;
-	margin: 0 0 _size(element-margin) 0;
+	margin: 0 0 $size-elem-mrgn 0;
 
 	code {
 		display: block;
@@ -168,8 +168,8 @@ pre {
 
 hr {
 	border: 0;
-	border-bottom: solid _size(border-width) #{var(--color-border)};
-	margin: (_size(element-margin) * 1.375) 0;
+	border-bottom: solid $size-border-width #{var(--color-border)};
+	margin: ($size-elem-mrgn * 1.375) 0;
 }
 
 .align-left {

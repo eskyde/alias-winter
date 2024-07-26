@@ -6,9 +6,9 @@
 	@include vendor(
 		'transition',
 		(
-			'transform #{_duration(article)} ease-in-out',
-			'filter #{_duration(article)} ease-in-out',
-			'opacity #{_duration(article)} ease-in-out'
+			'transform #{$duration-article} ease-in-out',
+			'filter #{$duration-article} ease-in-out',
+			'opacity #{$duration-article} ease-in-out'
 		)
 	);
 	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
@@ -19,7 +19,7 @@
 	text-align: center;
 
 	> * {
-		@include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
+		@include vendor('transition', 'opacity #{$duration-article} ease-in-out');
 		position: relative;
 		margin-top: 3.5rem;
 	}
@@ -52,17 +52,17 @@
 	.content {
 		border-style: solid;
 		border-color: #{var(--color-border)};
-		border-top-width: _size(border-width);
-		border-bottom-width: _size(border-width);
+		border-top-width: $size-border-width;
+		border-bottom-width: $size-border-width;
 		max-width: 100%;
 
 		.inner {
 			@include vendor(
 				'transition',
 				(
-					'max-height #{_duration(intro)} ease',
-					'padding #{_duration(intro)} ease',
-					'opacity #{_duration(article)} ease-in-out'
+					'max-height #{$duration-intro} ease',
+					'padding #{$duration-intro} ease',
+					'opacity #{$duration-article} ease-in-out'
 				)
 			);
 			@include vendor('transition-delay', '0.25s');
@@ -81,8 +81,8 @@
 
 		p {
 			text-transform: uppercase;
-			font-family: _font(family-bahn);
-			font-weight: _font(light);
+			font-family: $font-family-bahn;
+			font-weight: $font-weight-light;
 
 			color: #ddd;
 			letter-spacing: 0.3rem;
@@ -97,12 +97,12 @@
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid _size(border-width) #{var(--color-border)};
-			border-radius: _size(border-radius);
+			border: solid $size-border-width #{var(--color-border)};
+			border-radius: $size-border-radius;
 
 			li {
 				padding-left: 0;
-				border-left: solid _size(border-width) #{var(--color-border)};
+				border-left: solid $size-border-width #{var(--color-border)};
 
 				&:first-child {
 					border-left: 0;
@@ -113,13 +113,13 @@
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+					padding: 0 1.25rem 0 (1.25rem + $font-letter-spacing);
 					text-transform: uppercase;
-					font-family: _font(family-bahn);
-					font-weight: _font(bold);
+					font-family: $font-family-bahn;
+					font-weight: $font-weight-bold;
 
 					color: var(--color-text);
-					letter-spacing: _font(letter-spacing);
+					letter-spacing: $font-letter-spacing;
 					font-size: 0.8rem;
 					border-bottom: 0;
 
@@ -142,8 +142,8 @@
 				display: block;
 				position: absolute;
 				top: 0;
-				left: calc(50% - #{_size(border-width) * 1});
-				width: _size(border-width);
+				left: calc(50% - #{$size-border-width * 1});
+				width: $size-border-width;
 				height: 100%;
 				background: #{var(--color-border)};
 			}
@@ -229,7 +229,7 @@
 
 				li {
 					border-left: 0;
-					border-top: solid _size(border-width) #{var(--color-border)};
+					border-top: solid $size-border-width #{var(--color-border)};
 
 					&:first-child {
 						border-top: 0;

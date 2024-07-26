@@ -1,71 +1,29 @@
 @use 'sass:map';
 
-$font-weights: (
-	regular: 400,
-	medium: 500,
-	bold: 700
-);
+// durations
+$duration-transition: 0.2s;
+$duration-bg: 2.5s;
+$duration-ss: 0.85s;
+$duration-intro: 0.75s;
+$duration-article: 1.2s;
 
-// Misc.
-$misc: (
-	z-index-base: 10000
-);
+// sizes
+$size-border-radius: 4px;
+$size-border-width: 1px;
+$size-elem-hgth: 2.75rem;
+$size-elem-mrgn: 1rem;
 
-// Duration.
-$duration: (
-	transition: 0.2s,
-	bg: 2.5s,
-	ss: 0.85s,
-	intro: 0.75s,
-	article: 1.2s
-);
-
-// Size.
-$size: (
-	border-radius: 4px,
-	border-width: 1px,
-	element-height: 2.75rem,
-	element-margin: 1rem
-);
-
-// Font.
-$font: (
-	family-default: (
-		'Titillium Web',
-		sans-serif
-	),
-	family-bahn: (
-		'Bahnschrift',
-		sans-serif
-	),
-	family-fixed: (
-		'Courier New',
-		monospace
-	),
-	light: 300,
-	regular: 500,
-	bold: 600,
-	letter-spacing: 0.17rem,
-	letter-spacing-heading: 0.3rem
-);
-
-// Scrollbar
-$scrollbar: (
-	th-width: 6px,
-	th-height: 5px,
-	th-radius: 5px,
-	th-shadow: 0,
-	th-shadow-blur: 0,
-	th-border-width: 0,
-
-	tr-width: 100%,
-	tr-radius: 5px,
-
-	sb-radius: 5px,
-	sb-width: 6px,
-	sb-height: 5px,
-
-	b-radius: 5px,
-
-	bg: #555
-);
+// scrollbar
+$th-width: 6px;
+$th-height: 5px;
+$th-radius: 5px;
+$th-shadow: 0;
+$th-shadow-blur: 0;
+$th-border-width: 0;
+$tr-width: 100%;
+$tr-radius: 5px;
+$sb-radius: 5px;
+$sb-width: 6px;
+$sb-height: 5px;
+$b-radius: 5px;
+$bg: #555;

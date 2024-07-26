@@ -1,18 +1,18 @@
 /* Form */
 form {
-	margin: 0 0 _size(element-margin) 0;
+	margin: 0 0 $size-elem-mrgn 0;
 
 	> :last-child {
 		margin-bottom: 0;
 	}
 
 	> .fields {
-		$gutter: (_size(element-margin) * 0.75);
+		$gutter: ($size-elem-mrgn * 0.75);
 
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		width: calc(100% + #{$gutter * 2});
-		margin: ($gutter * -1) 0 _size(element-margin) ($gutter * -1);
+		margin: ($gutter * -1) 0 $size-elem-mrgn ($gutter * -1);
 
 		> .field {
 			@include vendor('flex-grow', '0');
@@ -36,10 +36,10 @@ form {
 
 	@include breakpoint('<=xsmall') {
 		> .fields {
-			$gutter: (_size(element-margin) * 0.75);
+			$gutter: ($size-elem-mrgn * 0.75);
 
 			width: calc(100% + #{$gutter * 2});
-			margin: ($gutter * -1) 0 _size(element-margin) ($gutter * -1);
+			margin: ($gutter * -1) 0 $size-elem-mrgn ($gutter * -1);
 
 			> .field {
 				padding: $gutter 0 0 $gutter;
@@ -65,10 +65,10 @@ label {
 	color: #{var(--color-txt-bold)};
 	display: block;
 	font-size: 0.8rem;
-	font-weight: _font(light);
-	letter-spacing: _font(letter-spacing);
+	font-weight: $font-weight-light;
+	letter-spacing: $font-letter-spacing;
 	line-height: 1.5;
-	margin: 0 0 (_size(element-margin) * 0.25) 0;
+	margin: 0 0 ($size-elem-mrgn * 0.25) 0;
 	text-transform: uppercase;
 }
 
@@ -82,14 +82,14 @@ textarea {
 	@include vendor(
 		'transition',
 		(
-			'border-color #{_duration(transition)} ease-in-out',
-			'box-shadow #{_duration(transition)} ease-in-out',
-			'background-color #{_duration(transition)} ease-in-out'
+			'border-color #{$duration-transition} ease-in-out',
+			'box-shadow #{$duration-transition} ease-in-out',
+			'background-color #{$duration-transition} ease-in-out'
 		)
 	);
 	background-color: transparent;
-	border-radius: _size(border-radius);
-	border: solid _size(border-width) #{var(--color-border)};
+	border-radius: $size-border-radius;
+	border: solid $size-border-width #{var(--color-border)};
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -104,7 +104,7 @@ textarea {
 	&:focus {
 		background: #{var(--color-bg-highlight)};
 		border-color: #{var(--color-txt-bold)};
-		box-shadow: 0 0 0 _size(border-width) #{var(--color-txt-bold)};
+		box-shadow: 0 0 0 $size-border-width #{var(--color-txt-bold)};
 	}
 }
 
@@ -115,8 +115,8 @@ select {
 	background-size: 1.25rem;
 	background-repeat: no-repeat;
 	background-position: calc(100% - 1rem) center;
-	height: _size(element-height);
-	padding-right: _size(element-height);
+	height: $size-elem-hgth;
+	padding-right: $size-elem-hgth;
 	text-overflow: ellipsis;
 
 	option {
@@ -139,7 +139,7 @@ input[type='text'],
 input[type='password'],
 input[type='email'],
 select {
-	height: _size(element-height);
+	height: $size-elem-hgth;
 }
 
 textarea {
@@ -163,9 +163,9 @@ input[type='radio'] {
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
-		font-weight: _font(light);
-		margin: 0 0 (_size(element-margin) * 0.25) 0;
-		padding-left: (_size(element-height) * 0.6) + 1rem;
+		font-weight: $font-weight-light;
+		margin: 0 0 ($size-elem-mrgn * 0.25) 0;
+		padding-left: ($size-elem-hgth * 0.6) + 1rem;
 		padding-right: 0.75rem;
 		position: relative;
 
@@ -173,23 +173,23 @@ input[type='radio'] {
 			@include vendor(
 				'transition',
 				(
-					'border-color #{_duration(transition)} ease-in-out',
-					'box-shadow #{_duration(transition)} ease-in-out',
-					'background-color #{_duration(transition)} ease-in-out'
+					'border-color #{$duration-transition} ease-in-out',
+					'box-shadow #{$duration-transition} ease-in-out',
+					'background-color #{$duration-transition} ease-in-out'
 				)
 			);
-			border-radius: _size(border-radius);
-			border: solid _size(border-width) #{var(--color-border)};
+			border-radius: $size-border-radius;
+			border: solid $size-border-width #{var(--color-border)};
 			content: '';
 			display: inline-block;
-			height: (_size(element-height) * 0.6);
+			height: ($size-elem-hgth * 0.6);
 			left: 0;
-			line-height: (_size(element-height) * 0.6);
-			line-height: calc(#{_size(element-height) * 0.6} + 0em);
+			line-height: ($size-elem-hgth * 0.6);
+			line-height: calc(#{$size-elem-hgth * 0.6} + 0em);
 			position: absolute;
 			text-align: center;
 			top: -0.15rem;
-			width: (_size(element-height) * 0.6);
+			width: ($size-elem-hgth * 0.6);
 		}
 	}
 
@@ -206,7 +206,7 @@ input[type='radio'] {
 		&:before {
 			background: #{var(--color-bg-highlight)};
 			border-color: #{var(--color-txt-bold)};
-			box-shadow: 0 0 0 _size(border-width) #{var(--color-txt-bold)};
+			box-shadow: 0 0 0 $size-border-width #{var(--color-txt-bold)};
 		}
 	}
 }
@@ -214,7 +214,7 @@ input[type='radio'] {
 input[type='checkbox'] {
 	& + label {
 		&:before {
-			border-radius: _size(border-radius);
+			border-radius: $size-border-radius;
 		}
 	}
 }

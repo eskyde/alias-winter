@@ -2,9 +2,9 @@
     @include vendor(
         'transition',
         (
-            'transform #{_duration(article)} ease-in-out',
-            'filter #{_duration(article)} ease-in-out',
-            'opacity #{_duration(article)} ease-in-out'
+            'transform #{$duration-article} ease-in-out',
+            'filter #{$duration-article} ease-in-out',
+            'opacity #{$duration-article} ease-in-out'
         )
     );
 

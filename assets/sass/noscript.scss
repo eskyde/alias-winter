@@ -39,6 +39,6 @@
 #main {
 	article {
 		opacity: 1;
-		margin: (_size(element-margin) * 2) 0 0 0;
+		margin: ($size-elem-mrgn * 2) 0 0 0;
 	}
 }

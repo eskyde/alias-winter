@@ -14,7 +14,7 @@
 		@include vendor('transform', 'translateY(0.25rem)');
 		@include vendor(
 			'transition',
-			('opacity #{_duration(article)} ease-in-out', 'transform #{_duration(article)} ease-in-out')
+			('opacity #{$duration-article} ease-in-out', 'transform #{$duration-article} ease-in-out')
 		);
 		@include padding(2.5rem, 2.5rem, (0, 0, 1rem, 0));
 		position: relative;
@@ -23,7 +23,7 @@
 		max-height: 85vh;
 		overflow-y: auto;
 		background-color: #{var(--color-bg-article)};
-		border-radius: _size(border-radius);
+		border-radius: $size-border-radius;
 		opacity: 0;
 
 		&.active {
