@@ -118,17 +118,19 @@
 					font-family: _font(family-bahn);
 					font-weight: _font(bold);
 
-					color: #ddd;
+					color: var(--color-complementary);
 					letter-spacing: _font(letter-spacing);
 					font-size: 0.8rem;
 					border-bottom: 0;
 
 					&:hover {
-						background-color: #{var(--color-bg-highlight)};
+						color: var(--color-primary);
+						background-color: var(--color-bg-highlight);
 					}
 
 					&:active {
-						background-color: #{var(--color-bg-active)};
+						color: var(--color-primary);
+						background-color: var(--color-bg-active);
 					}
 				}
 			}

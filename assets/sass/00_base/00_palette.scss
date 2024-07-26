@@ -1,16 +1,14 @@
 @use 'sass:color';
 
 // base color sheme
-$color-primary: #3de; // #fb3;
+$color-primary: #ade;
 $color-secondary: #078;
 $color-complementary: #ddd;
 
 $color-bg: #111;
-$color-bg-highlight: rgba(255, 255, 255, 0.075);
-$color-bg-active: rgba(255, 255, 255, 0.175);
+$color-bg-highlight: rgba(255, 255, 255, 0.1);
+$color-bg-active: rgba(255, 255, 255, 0.2);
 
-$color-txt: $color-complementary;
-$color-txt-bold: $color-primary;
 $color-txt-lighten: rgba(255, 255, 255, 0.5);
 
 $bg-overlay: rgba(19, 21, 25, 0.5);
@@ -31,7 +29,7 @@ $bg-overlay-fo: rgba(19, 21, 25, 1);
 
 	--color-txt: #{var(--color-complementary)};
 	--color-txt-bold: #{var(--color-primary)};
-	--color-txt-light: #{$color-txt-lighten};
+	--color-txt-light: #{lighten($color-complementary, 5%)};
 
 	--bg-overlay: #{$bg-overlay};
 	--bg-overlay-fo: #{$bg-overlay-fo};
