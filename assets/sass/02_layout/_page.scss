@@ -26,7 +26,7 @@ html {
 }
 
 body {
-	background: _color(bg);
+	background: #{var(--color-bg)};
 
 	// Stops initial animations until page loads.
 	&.is-preload {

@@ -62,7 +62,7 @@ form {
 }
 
 label {
-	color: _color(fg-bold);
+	color: #{var(--color-txt-bold)};
 	display: block;
 	font-size: 0.8rem;
 	font-weight: _font(light);
@@ -89,7 +89,7 @@ textarea {
 	);
 	background-color: transparent;
 	border-radius: _size(border-radius);
-	border: solid _size(border-width) _color(border);
+	border: solid _size(border-width) #{var(--color-border)};
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -102,15 +102,15 @@ textarea {
 	}
 
 	&:focus {
-		background: _color(bg-highlighted);
-		border-color: _color(fg-bold);
-		box-shadow: 0 0 0 _size(border-width) _color(fg-bold);
+		background: #{var(--color-bg-highlight)};
+		border-color: #{var(--color-txt-bold)};
+		box-shadow: 0 0 0 _size(border-width) #{var(--color-txt-bold)};
 	}
 }
 
 select {
 	background-image: svg-url(
-		"<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{_color(border)}' /></svg>"
+		"<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{#{var(--color-border)}}' /></svg>"
 	);
 	background-size: 1.25rem;
 	background-repeat: no-repeat;
@@ -120,8 +120,8 @@ select {
 	text-overflow: ellipsis;
 
 	option {
-		color: _color(fg);
-		background: _color(bg);
+		color: #{var(--color-txt)};
+		background: #{var(--color-bg)};
 	}
 
 	&:focus {
@@ -159,7 +159,7 @@ input[type='radio'] {
 	& + label {
 		@include icon(false, solid);
 		@include vendor('user-select', 'none');
-		color: _color(fg);
+		color: #{var(--color-txt)};
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -179,7 +179,7 @@ input[type='radio'] {
 				)
 			);
 			border-radius: _size(border-radius);
-			border: solid _size(border-width) _color(border);
+			border: solid _size(border-width) #{var(--color-border)};
 			content: '';
 			display: inline-block;
 			height: (_size(element-height) * 0.6);
@@ -195,18 +195,18 @@ input[type='radio'] {
 
 	&:checked + label {
 		&:before {
-			background: _color(fg-bold) !important;
-			border-color: _color(fg-bold) !important;
-			color: _color(bg);
+			background: #{var(--color-txt-bold)} !important;
+			border-color: #{var(--color-txt-bold)} !important;
+			color: #{var(--color-bg)};
 			content: '\f00c';
 		}
 	}
 
 	&:focus + label {
 		&:before {
-			background: _color(bg-highlighted);
-			border-color: _color(fg-bold);
-			box-shadow: 0 0 0 _size(border-width) _color(fg-bold);
+			background: #{var(--color-bg-highlight)};
+			border-color: #{var(--color-txt-bold)};
+			box-shadow: 0 0 0 _size(border-width) #{var(--color-txt-bold)};
 		}
 	}
 }
@@ -228,26 +228,26 @@ input[type='radio'] {
 }
 
 ::-webkit-input-placeholder {
-	color: _color(fg-light) !important;
+	color: #{var(--color-txt-light)} !important;
 	opacity: 1;
 }
 
 :-moz-placeholder {
-	color: _color(fg-light) !important;
+	color: #{var(--color-txt-light)} !important;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: _color(fg-light) !important;
+	color: #{var(--color-txt-light)} !important;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: _color(fg-light) !important;
+	color: #{var(--color-txt-light)} !important;
 	opacity: 1;
 }
 
 .formerize-placeholder {
-	color: _color(fg-light) !important;
+	color: #{var(--color-txt-light)} !important;
 	opacity: 1;
 }

@@ -1,18 +1,20 @@
+@use 'sass:color';
+
 // base color sheme
-$color-primary: #078;
-$color-secondary: #fb3;
+$color-primary: #fb3;
+$color-secondary: #078;
 $color-complementary: #ddd;
 
 $color-bg: #111;
-$color-bg-article: transparentize($color-bg, 0.15);
-$color-fg: $color-complementary;
-$color-fg-bold: $color-primary;
-$color-fg-light: rgba(255, 255, 255, 0.5);
+$color-bg-highlight: rgba(255, 255, 255, 0.075);
+$color-bg-active: rgba(255, 255, 255, 0.175);
+
+$color-txt: $color-complementary;
+$color-txt-bold: $color-primary;
+$color-txt-lighten: rgba(255, 255, 255, 0.5);
 
 $bg-overlay: rgba(19, 21, 25, 0.5);
 $bg-overlay-fo: rgba(19, 21, 25, 1);
-
-
 
 // pallette
 :root {
@@ -21,13 +23,16 @@ $bg-overlay-fo: rgba(19, 21, 25, 1);
 	--color-complementary: #{$color-complementary};
 
 	--color-bg: #{$color-bg};
+	--color-bg-article: #{color.scale($color-bg, $alpha: -20%)};
+	--color-bg-highlight: #{$color-bg-highlight};
+	--color-bg-active: #{$color-bg-active};
+
+	--color-border: #{$color-secondary};
+
+	--color-txt: #{$color-txt};
+	--color-txt-bold: #{$color-txt-bold};
+	--color-txt-light: #{$color-txt-lighten};
+
 	--bg-overlay: #{$bg-overlay};
 	--bg-overlay-fo: #{$bg-overlay-fo};
-
-	--color-fg: #{$color-fg};
-	--color-fg-bold: #{$color-fg-bold};
-	--color-fg-light: #{$color-fg-light};
-
-	--color-border-bg: rgba(255, 255, 255, 0.075);
-	--color-border-bg-alt: rgba(255, 255, 255, 0.175);
 }

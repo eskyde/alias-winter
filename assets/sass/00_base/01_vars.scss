@@ -49,26 +49,6 @@ $font: (
 	letter-spacing-heading: 0.3rem
 );
 
-// Palette.
-$palette: (
-	primary: #{var(--color-primary)},
-	secondary: #{var(--color-secondary)},
-	complementary: #{var(--color-complementary)},
-
-	bg: #{var(--color-bg)},
-	article: $color-bg-article,
-	bg-overlay: #{var(--bg-overlay)},
-	bg-overlay-fo: #{var(--bg-overlay-fo)},
-
-	fg: #{var(--color-fg)},
-	fg-bold: #{var(--color-fg-bold)},
-	fg-light: #{var(--color-fg-light)},
-
-	border: #{var(--color-complementary)},
-	bg-highlighted: #{var(--color-border-bg)},
-	border-bg-alt: #{var(--color-border-bg-alt)}
-);
-
 // Scrollbar
 $scrollbar: (
 	th-width: 6px,

@@ -1,13 +1,13 @@
 .color {
     &.primary {
-        color: _color(primary);
+        color: #{var(--color-primary)};
     }
 
     &.secondary {
-        color: _color(secondary);
+        color: #{var(--color-secondary)};
     }
 
     &.complementary {
-        color: _color(complementary);
+        color: #{var(--color-complementary)};
     }
 }
