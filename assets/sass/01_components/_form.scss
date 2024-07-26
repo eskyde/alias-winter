@@ -102,7 +102,7 @@ textarea {
 	}
 
 	&:focus {
-		background: _color(border-bg);
+		background: _color(bg-highlighted);
 		border-color: _color(fg-bold);
 		box-shadow: 0 0 0 _size(border-width) _color(fg-bold);
 	}
@@ -204,7 +204,7 @@ input[type='radio'] {
 
 	&:focus + label {
 		&:before {
-			background: _color(border-bg);
+			background: _color(bg-highlighted);
 			border-color: _color(fg-bold);
 			box-shadow: 0 0 0 _size(border-width) _color(fg-bold);
 		}

@@ -30,12 +30,12 @@ $size: (
 
 // Font.
 $font: (
-	family-bahn: (
-		'Bahnschrift',
-		sans-serif
-	),
 	family-default: (
 		'Titillium Web',
+		sans-serif
+	),
+	family-bahn: (
+		'Bahnschrift',
 		sans-serif
 	),
 	family-fixed: (
@@ -55,9 +55,8 @@ $palette: (
 	secondary: #{var(--color-secondary)},
 	complementary: #{var(--color-complementary)},
 
-	bg: $color-bg,
-	// #{var(--color-bg)},
-	bg-alt: #{var(--color-bg-alt)},
+	bg: #{var(--color-bg)},
+	article: $color-bg-article,
 	bg-overlay: #{var(--bg-overlay)},
 	bg-overlay-fo: #{var(--bg-overlay-fo)},
 
@@ -66,7 +65,7 @@ $palette: (
 	fg-light: #{var(--color-fg-light)},
 
 	border: #{var(--color-complementary)},
-	border-bg: #{var(--color-border-bg)},
+	bg-highlighted: #{var(--color-border-bg)},
 	border-bg-alt: #{var(--color-border-bg-alt)}
 );
 

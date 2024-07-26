@@ -1,19 +1,18 @@
 // base color sheme
-$color-primary: #fb3;
-$color-secondary: #ddd;
-$color-complementary: #078;
+$color-primary: #078;
+$color-secondary: #fb3;
+$color-complementary: #ddd;
 
 $color-bg: #111;
-$color-bg-alt: #000;
+$color-bg-article: transparentize($color-bg, 0.15);
+$color-fg: $color-complementary;
+$color-fg-bold: $color-primary;
+$color-fg-light: rgba(255, 255, 255, 0.5);
+
 $bg-overlay: rgba(19, 21, 25, 0.5);
 $bg-overlay-fo: rgba(19, 21, 25, 1);
 
-$color-fg: $color-secondary;
-$color-fg-bold: $color-secondary;
-$color-fg-light: rgba(255, 255, 255, 0.5);
 
-$color-border-bg: rgba(255, 255, 255, 0.075);
-$color-border-bg-alt: rgba(255, 255, 255, 0.175);
 
 // pallette
 :root {
@@ -22,13 +21,12 @@ $color-border-bg-alt: rgba(255, 255, 255, 0.175);
 	--color-complementary: #{$color-complementary};
 
 	--color-bg: #{$color-bg};
-	--color-bg-alt: #{$color-bg-alt};
-	--bg-overlay: rgba(19, 21, 25, 0.5);
-	--bg-overlay-fo: rgba(19, 21, 25, 1);
+	--bg-overlay: #{$bg-overlay};
+	--bg-overlay-fo: #{$bg-overlay-fo};
 
 	--color-fg: #{$color-fg};
 	--color-fg-bold: #{$color-fg-bold};
-	--color-fg-light: rgba(255, 255, 255, 0.5);
+	--color-fg-light: #{$color-fg-light};
 
 	--color-border-bg: rgba(255, 255, 255, 0.075);
 	--color-border-bg-alt: rgba(255, 255, 255, 0.175);

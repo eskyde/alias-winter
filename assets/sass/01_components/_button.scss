@@ -29,7 +29,7 @@ button,
 	white-space: nowrap;
 
 	&:hover {
-		background-color: _color(border-bg);
+		background-color: _color(bg-highlighted);
 	}
 
 	&:active {
