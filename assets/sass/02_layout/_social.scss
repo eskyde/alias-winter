@@ -1,0 +1,23 @@
+.social {
+    @include vendor(
+        'transition',
+        (
+            'transform #{_duration(article)} ease-in-out',
+            'filter #{_duration(article)} ease-in-out',
+            'opacity #{_duration(article)} ease-in-out'
+        )
+    );
+
+    position: fixed;
+    opacity: 1;
+
+    top: 3rem;
+    right: 3rem;
+
+    z-index: 5;
+
+    .is-article-visible & {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
