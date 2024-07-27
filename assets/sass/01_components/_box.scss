@@ -2,7 +2,7 @@
 .box {
 	border-radius: $size-border-radius;
 	border: solid $size-border-width #{var(--color-border)};
-	margin-bottom: $size-elem-mrgn;
+	margin-bottom: $spc-mrgn-base;
 	padding: 1.5em;
 
 	> :last-child,

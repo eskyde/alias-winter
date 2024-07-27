@@ -43,11 +43,11 @@
 
 	$x: 0.1em;
 
-	@if unit($size-elem-mrgn) == 'rem' {
+	@if unit($spc-mrgn-base) == 'rem' {
 		$x: 0.1rem;
 	}
 
-	padding: ($tb + nth($pad, 1)) ($lr + nth($pad, 2)) max($x, $tb - $size-elem-mrgn + nth($pad, 3))
+	padding: ($tb + nth($pad, 1)) ($lr + nth($pad, 2)) max($x, $tb - $spc-mrgn-base + nth($pad, 3))
 		($lr + nth($pad, 4)) #{$important};
 }
 

@@ -5,12 +5,12 @@
 }
 
 table {
-	margin: 0 0 $size-elem-mrgn 0;
+	margin-bottom: $spc-mrgn-base;
 	width: 100%;
 
 	tbody {
 		tr {
-			border: solid $size-border-width #{var(--color-border)};
+			border: solid $size-border-width var(--color-border);
 			border-left: 0;
 			border-right: 0;
 
@@ -18,22 +18,26 @@ table {
 				background-color: rgba(255, 255, 255, 0.05);
 			}
 		}
-	}
 
-	td {
-		padding: 0.75em 0.75em;
+		td:nth-child(3) {
+			vertical-align: middle;
+		}
 	}
 
 	th {
 		color: #{var(--color-txt-bold)};
 		font-size: 1em;
 		font-weight: $font-weight-bold;
-		padding: 0 0.75em 0.75em 0.75em;
+		padding: $spc-padding-cell 0;
 		text-align: left;
 	}
 
+	td {
+		padding: $spc-padding-cell 0;
+	}
+
 	tfoot {
-		border-top: solid ($size-border-width * 2) #{var(--color-border)};
+		border-top: solid ($size-border-width * 2) var(--color-border);
 	}
 
 	&.alt {
@@ -42,7 +46,7 @@ table {
 		tbody {
 			tr {
 				td {
-					border: solid $size-border-width #{var(--color-border)};
+					border: solid $size-border-width var(--color-border);
 					border-left-width: 0;
 					border-top-width: 0;
 

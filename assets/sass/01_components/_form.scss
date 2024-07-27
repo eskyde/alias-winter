@@ -1,18 +1,18 @@
 /* Form */
 form {
-	margin: 0 0 $size-elem-mrgn 0;
+	margin: 0 0 $spc-mrgn-base 0;
 
 	> :last-child {
 		margin-bottom: 0;
 	}
 
 	> .fields {
-		$gutter: ($size-elem-mrgn * 0.75);
+		$gutter: ($spc-mrgn-base * 0.75);
 
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		width: calc(100% + #{$gutter * 2});
-		margin: ($gutter * -1) 0 $size-elem-mrgn ($gutter * -1);
+		margin: ($gutter * -1) 0 $spc-mrgn-base ($gutter * -1);
 
 		> .field {
 			@include vendor('flex-grow', '0');
@@ -36,10 +36,10 @@ form {
 
 	@include breakpoint('<=xsmall') {
 		> .fields {
-			$gutter: ($size-elem-mrgn * 0.75);
+			$gutter: ($spc-mrgn-base * 0.75);
 
 			width: calc(100% + #{$gutter * 2});
-			margin: ($gutter * -1) 0 $size-elem-mrgn ($gutter * -1);
+			margin: ($gutter * -1) 0 $spc-mrgn-base ($gutter * -1);
 
 			> .field {
 				padding: $gutter 0 0 $gutter;
@@ -68,7 +68,7 @@ label {
 	font-weight: $font-weight-light;
 	letter-spacing: $font-letter-spacing;
 	line-height: 1.5;
-	margin: 0 0 ($size-elem-mrgn * 0.25) 0;
+	margin: 0 0 ($spc-mrgn-base * 0.25) 0;
 	text-transform: uppercase;
 }
 
@@ -164,7 +164,7 @@ input[type='radio'] {
 		display: inline-block;
 		font-size: 0.8rem;
 		font-weight: $font-weight-light;
-		margin: 0 0 ($size-elem-mrgn * 0.25) 0;
+		margin: 0 0 ($spc-mrgn-base * 0.25) 0;
 		padding-left: ($size-elem-hgth * 0.6) + 1rem;
 		padding-right: 0.75rem;
 		position: relative;

@@ -48,7 +48,7 @@
 
 	&.fit {
 		display: block;
-		margin: 0 0 $size-elem-mrgn 0;
+		margin: 0 0 $spc-mrgn-base 0;
 		width: 100%;
 
 		img {
@@ -58,7 +58,7 @@
 
 	&.main {
 		display: block;
-		margin: ($size-elem-mrgn * 1.25) 0;
+		margin: ($spc-mrgn-base * 1.25) 0;
 		width: 100%;
 
 		img {
@@ -68,13 +68,13 @@
 
 	@include breakpoint('<=small') {
 		&.main {
-			margin: ($size-elem-mrgn * 1) 0;
+			margin: ($spc-mrgn-base * 1) 0;
 		}
 	}
 
 	@include breakpoint('<=xsmall') {
 		&.main {
-			margin: ($size-elem-mrgn * 0.75) 0;
+			margin: ($spc-mrgn-base * 0.75) 0;
 		}
 	}
 }

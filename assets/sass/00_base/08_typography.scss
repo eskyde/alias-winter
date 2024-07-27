@@ -20,7 +20,7 @@ body,
 input,
 select,
 textarea {
-	color: #{var(--color-txt)};
+	color: var(--color-txt);
 	font-family: $font-family-default;
 	font-weight: $font-weight-light;
 	font-size: 1rem;
@@ -36,18 +36,18 @@ a {
 			'border-bottom-color #{$duration-transition} ease-in-out'
 		)
 	);
-	border-bottom: dotted 1px #{var(--color-txt-light)};
+	border-bottom: dotted 1px var(--color-txt-light);
 	text-decoration: none;
 	color: inherit;
 
 	&:hover {
-		border-bottom-color: #{var(--color-secondary)};
+		border-bottom-color: var(--color-border);
 	}
 }
 
 strong,
 b {
-	color: #{var(--color-txt-bold)};
+	color: var(--color-txt-bold);
 	font-weight: $font-weight-bold;
 }
 
@@ -60,7 +60,7 @@ p {
 	letter-spacing: 0.125rem;
 	font-size: 1.1rem;
 	line-height: 1.8;
-	margin: 0 0 $size-elem-mrgn 0;
+	margin-bottom: $spc-mrgn-base;
 }
 
 h2,
@@ -78,9 +78,9 @@ h4,
 h5,
 h6 {
 	font-family: $font-family-bahn;
-	color: #{var(--color-primary)};
+	color: var(--color-primary);
 	line-height: 1.5;
-	margin: 0 0 $size-elem-mrgn 0;
+	margin-bottom: $spc-mrgn-base;
 	text-transform: uppercase;
 	letter-spacing: $font-letter-spacing-heading;
 
@@ -92,8 +92,6 @@ h6 {
 	&.major {
 		border-bottom: solid $size-border-width #{var(--color-border)};
 		width: 100%;
-		padding-bottom: 0.5rem;
-		margin: 0 0 ($size-elem-mrgn * 1) 0;
 	}
 }
 
@@ -139,12 +137,12 @@ sup {
 blockquote {
 	border-left: solid ($size-border-width * 4) #{var(--color-border)};
 	font-style: italic;
-	margin: 0 0 $size-elem-mrgn 0;
-	padding: calc($size-elem-mrgn / 4) 0 calc($size-elem-mrgn / 4) $size-elem-mrgn;
+	margin-bottom: $spc-mrgn-base;
+	padding: $spc-padding-cell;
 }
 
 code {
-	background: #{var(--color-bg-highlight)};
+	background: var(--color-bg-highlight);
 	border-radius: $size-border-radius;
 	font-family: $font-family-mono;
 	font-size: 0.9rem;
@@ -156,7 +154,7 @@ pre {
 	-webkit-overflow-scrolling: touch;
 	font-family: $font-family-mono;
 	font-size: 0.9rem;
-	margin: 0 0 $size-elem-mrgn 0;
+	margin: 0 0 $spc-mrgn-base 0;
 
 	code {
 		display: block;
@@ -168,8 +166,8 @@ pre {
 
 hr {
 	border: 0;
-	border-bottom: solid $size-border-width #{var(--color-border)};
-	margin: ($size-elem-mrgn * 1.375) 0;
+	border-bottom: solid $size-border-width var(--color-border);
+	margin: $spc-mrgn-base 0;
 }
 
 .align-left {
