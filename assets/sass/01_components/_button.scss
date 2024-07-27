@@ -22,7 +22,7 @@ button,
 	letter-spacing: $font-letter-spacing;
 	line-height: $size-elem-hgth;
 	outline: 0;
-	padding: 0 1.25rem 0 (1.25rem + ($font-letter-spacing * 0.5));
+	padding: 0 $spc-padding-button;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -41,6 +41,12 @@ button,
 			margin-right: 0.5em;
 		}
 	}
+	
+	&:empty {
+		&:before {
+			margin: 0;
+		}
+	}
 
 	&.fit {
 		width: 100%;
@@ -53,8 +59,8 @@ button,
 	}
 
 	&.primary {
-		background-color: #{var(--color-txt-bold)};
-		color: #{var(--color-bg)};
+		background-color: var(--color-txt-bold);
+		color: var(--color-bg);
 	}
 
 	&.disabled,

@@ -72,14 +72,6 @@
 	@include breakpoint('<=small') {
 		article {
 			@include padding(2.5rem, 2rem, (0, 0, 0.5rem, 0));
-
-			.close {
-				&:before {
-					left: 0.875rem;
-					width: 2.25rem;
-					height: 2.25rem;
-				}
-			}
 		}
 	}
 

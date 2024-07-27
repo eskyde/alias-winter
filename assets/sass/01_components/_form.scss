@@ -120,8 +120,8 @@ select {
 	text-overflow: ellipsis;
 
 	option {
-		color: #{var(--color-txt)};
-		background: #{var(--color-bg)};
+		color: var(--color-txt);
+		background: var(--color-bg);
 	}
 
 	&:focus {

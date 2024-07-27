@@ -28,12 +28,20 @@ table {
 		color: #{var(--color-txt-bold)};
 		font-size: 1em;
 		font-weight: $font-weight-bold;
-		padding: $spc-padding-cell 0;
+		padding: $spc-padding-cell;
 		text-align: left;
+
+		&:first-child {
+			padding-left: 0;
+		}
 	}
 
 	td {
-		padding: $spc-padding-cell 0;
+		padding: $spc-padding-cell;
+
+		&:first-child {
+			padding-left: 0;
+		}
 	}
 
 	tfoot {
@@ -70,5 +78,9 @@ table {
 		tfoot {
 			border-top: 0;
 		}
+	}
+	
+	ul {
+		margin: 0;
 	}
 }

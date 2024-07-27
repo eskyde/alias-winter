@@ -1,0 +1,25 @@
+.close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    padding: 1rem;
+
+    > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 2rem;
+
+        border-bottom: 1px solid var(--color-primary);
+
+        &:first-child {
+            transform: translateY(1rem) rotate(45deg);
+        }
+
+        &:last-child {
+            transform: translateY(1rem) rotate(-45deg);
+        }
+    }
+}

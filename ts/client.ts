@@ -41,6 +41,23 @@ export class Client {
         const $main_articles: JQuery = $main.children('article');
         const browser: Bowser.Parser.Parser = Bowser.getParser(window.navigator.userAgent);
 
+        // cookie window
+        const $cookieWindow: JQuery = $('#cookies');
+        const $closeBtn: JQuery = $cookieWindow.find('.close');
+        const $closeX: JQuery = $cookieWindow.find('.thx');
+        const _closeFc: (pEvt: JQuery.Event) => void = (pEvt) => {
+            pEvt.stopPropagation();
+            $cookieWindow.fadeToggle('slow');
+            $closeBtn.off();
+            $closeX.off();
+            window.setTimeout(() => {
+                $cookieWindow.remove();
+            }, 2 * 1000);
+
+        };
+        $closeBtn.on('click', _closeFc);
+        $closeX.on('click', _closeFc);
+
         // initially hide main and, articles.
         $main.hide();
         $main_articles.hide();
@@ -83,7 +100,7 @@ export class Client {
         // Methods.
         const _show: (id: string, initial?: boolean) => void = (id, initial) => {
 
-            var $article = $main_articles.filter('#' + id);
+            let $article = $main_articles.filter('#' + id);
 
             // No such article? Bail.
             if ($article.length == 0)
@@ -133,7 +150,7 @@ export class Client {
             if ($body.hasClass('is-article-visible')) {
 
                 // Deactivate current article.
-                var $currentArticle = $main_articles.filter('.active');
+                let $currentArticle = $main_articles.filter('.active');
 
                 $currentArticle.removeClass('active');
 
@@ -206,7 +223,7 @@ export class Client {
 
         const _hide: (addState?: boolean) => void = (addState) => {
 
-            var $article = $main_articles.filter('.active');
+            const $article = $main_articles.filter('.active');
 
             // Article not visible? Bail.
             if (!$body.hasClass('is-article-visible'))
@@ -298,8 +315,8 @@ export class Client {
 
             // Close.button
             $('.close').on('click', function () {
-                    location.hash = '';
-                });
+                location.hash = '';
+            });
 
             // Prevent clicks from inside article from bubbling.
             $this.on('click', function (event) {
