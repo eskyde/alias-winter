@@ -16,6 +16,7 @@
     z-index: 5;
 
     svg {
+        justify-self: end;
         transform: rotate(33deg);
 
         height: 150px;
@@ -29,5 +30,11 @@
 
     .cookies-info {
         padding: 0 2rem;
+    }
+
+    .close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
     }
 }

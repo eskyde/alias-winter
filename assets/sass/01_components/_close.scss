@@ -1,9 +1,16 @@
 .close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+    position: sticky;
+    float: right;
 
-    padding: 1rem;
+    z-index: 5;
+
+    top: 0;
+    right: 0;
+
+    width: 2rem;
+    height: 2rem;
+
+    cursor: pointer;
 
     > div {
         position: absolute;

@@ -31,34 +31,6 @@
 			opacity: 1;
 		}
 
-		.close {
-			display: grid;
-			place-content: center;
-
-			position: sticky;
-
-			top: 0;
-			float: right;
-
-			z-index: 4;
-
-			width: 2rem;
-			height: 2rem;
-
-			cursor: pointer;
-			overflow: hidden;
-			white-space: nowrap;
-
-			svg {
-				width: 24px;
-				height: 24px;
-			}
-
-			.color-svg {
-				stroke: var(--color-primary) !important;
-			}
-		}
-
 		&.gallery {
 			width: 70rem;
 

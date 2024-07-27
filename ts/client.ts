@@ -47,6 +47,8 @@ export class Client {
         const $closeX: JQuery = $cookieWindow.find('.thx');
         const _closeFc: (pEvt: JQuery.Event) => void = (pEvt) => {
             pEvt.stopPropagation();
+            pEvt.stopImmediatePropagation();
+            
             $cookieWindow.fadeToggle('slow');
             $closeBtn.off();
             $closeX.off();
