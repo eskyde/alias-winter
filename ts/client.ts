@@ -320,8 +320,13 @@ export class Client {
             const $this: JQuery = $(pElem);
 
             // Close.button
-            $('.close').on('click', function () {
+            $('.close').on('click', function (pEvt) {
+                const $closeBtn = $(pEvt.currentTarget);
                 location.hash = '';
+                $closeBtn.addClass('animate');
+                window.setTimeout(() => {
+                    $closeBtn.removeClass('animate');
+                }, 1000);
             });
 
             // Prevent clicks from inside article from bubbling.
