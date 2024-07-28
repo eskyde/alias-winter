@@ -45,17 +45,21 @@ export class Client {
         const $cookieWindow: JQuery = $('#cookies');
         const $closeBtn: JQuery = $cookieWindow.find('.close');
         const $closeX: JQuery = $cookieWindow.find('.thx');
-        const _closeFc: (pEvt: JQuery.Event) => void = (pEvt) => {
+        const _closeFc: (pEvt: JQuery.ClickEvent) => void = (pEvt) => {
+            const $closeIcn = $(pEvt.currentTarget);
+
             pEvt.stopPropagation();
             pEvt.stopImmediatePropagation();
-            
-            $cookieWindow.fadeToggle('slow');
+
+            $cookieWindow.addClass('animate');
+            $closeIcn.addClass('animate');
+            $closeIcn.addClass('active');
+
             $closeBtn.off();
             $closeX.off();
             window.setTimeout(() => {
                 $cookieWindow.remove();
-            }, 2 * 1000);
-
+            }, 1000);
         };
         $closeBtn.on('click', _closeFc);
         $closeX.on('click', _closeFc);

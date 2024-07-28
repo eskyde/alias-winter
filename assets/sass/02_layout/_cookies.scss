@@ -1,7 +1,7 @@
 .cookies {
     position: fixed;
     bottom: 0;
-    
+
     height: 250px;
     width: 100vw;
 
@@ -36,5 +36,24 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
+    }
+
+    .button {
+        background-position: center;
+        transition: background .3s ease-in;
+
+        &:hover {
+            background: #bef radial-gradient(circle, transparent 1%, #bef 1%) center/15000%;
+        }
+
+        &:active {
+            background-color: #eff;
+            background-size: 100%;
+            transition: background 0s;
+        }
+    }
+
+    &.animate {
+        animation: closeCookieWindow .9s ease-in-out forwards;
     }
 }

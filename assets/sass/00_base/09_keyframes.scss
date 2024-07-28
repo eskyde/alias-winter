@@ -1,0 +1,55 @@
+// used to animate the close cross btn @see 01_components/_close.scss
+@keyframes hideCloseBtn45 { // first child (one line of the cross)
+    from {
+        transform: translate(0rem, 1rem) rotate(45deg);
+        width: 2rem;
+    }
+
+    50% {
+        transform: translate(0rem, 1rem) rotate(-45deg);
+        width: 2rem;
+    }
+
+    to {
+        transform: translate(-1rem, 1rem) rotate(-45deg);
+        width: 0;
+    }
+}
+
+@keyframes hideCloseBtnMinus45 { // last child (other line of the cross
+    from {
+        transform: translate(0rem, 1rem) rotate(-45deg);
+        width: 2rem;
+    }
+
+    50% {
+        transform: translate(0rem, 1rem) rotate(45deg);
+        width: 2rem;
+    }
+
+    to {
+        transform: translate(-1rem, 1rem) rotate(45deg);
+        width: 0;
+    }
+}
+
+/* # animate closing the cookie window */
+@keyframes closeCookieWindow {
+    from {
+        height: 250px;
+        bottom: 0;
+        opacity: 1;
+    }
+
+    75% {
+        height: 270px;
+        bottom: 0;
+        opacity: 1;
+    }
+
+    to {
+        height: 250px;
+        bottom: -250px;
+        opacity: 0;
+    }
+}
