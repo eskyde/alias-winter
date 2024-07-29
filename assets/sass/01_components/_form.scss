@@ -1,6 +1,9 @@
 /* Form */
 form {
-	margin: 0 0 $spc-mrgn-base 0;
+	display: grid;
+	grid-auto-flow: row;
+
+	margin-bottom: $spc-mrgn-base;
 
 	> :last-child {
 		margin-bottom: 0;
@@ -20,6 +23,11 @@ form {
 			padding: $gutter 0 0 $gutter;
 			width: calc(100% - #{$gutter * 1});
 
+			display: grid;
+			grid-template-areas:
+				'label'
+				'input';
+
 			&.half {
 				width: calc(50% - #{$gutter * 0.5});
 			}
@@ -31,7 +39,30 @@ form {
 			&.quarter {
 				width: calc(25% - #{$gutter * 0.25});
 			}
+
+			> input[required] + label:after,
+			> select[required] + label:after,
+			> textarea[required] + label:after {
+				content: '*';
+				font-size: 0.9rem;
+				color: var(--color-error);
+				margin-left: 2px;
+			}
+
+			> label {
+				grid-area: label;
+			}
+
+			> input,
+			textarea,
+			select {
+				grid-area: input;
+			}
 		}
+	}
+
+	> button {
+		justify-self: end;
 	}
 
 	@include breakpoint('<=xsmall') {
@@ -64,7 +95,7 @@ form {
 label {
 	color: #{var(--color-txt-bold)};
 	display: block;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-weight: $font-weight-light;
 	letter-spacing: $font-letter-spacing;
 	line-height: 1.5;
@@ -76,6 +107,7 @@ input[type='text'],
 input[type='password'],
 input[type='email'],
 input[type='tel'],
+input[type='date'],
 select,
 textarea {
 	@include vendor('appearance', 'none');
@@ -89,7 +121,8 @@ textarea {
 	);
 	background-color: transparent;
 	border-radius: $size-border-radius;
-	border: solid $size-border-width #{var(--color-border)};
+	border: solid $size-border-width var(--color-border);
+	min-height: $size-elem-hgth;
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -102,19 +135,25 @@ textarea {
 	}
 
 	&:focus {
-		background: #{var(--color-bg-highlight)};
-		border-color: #{var(--color-txt-bold)};
+		background-color: var(--color-bg-highlight);
+		border-color: var(--color-txt-bold);
 		box-shadow: 0 0 0 $size-border-width #{var(--color-txt-bold)};
 	}
 }
 
+input[type='date'] {
+	// TODO make this dependent on a variable $darkmode
+	color-scheme: dark;
+}
+
 select {
 	background-image: svg-url(
-		"<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{#{var(--color-border)}}' /></svg>"
+		"<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{$color-primary}' /></svg>"
 	);
 	background-size: 1.25rem;
 	background-repeat: no-repeat;
 	background-position: calc(100% - 1rem) center;
+
 	height: $size-elem-hgth;
 	padding-right: $size-elem-hgth;
 	text-overflow: ellipsis;
@@ -143,6 +182,7 @@ select {
 }
 
 textarea {
+	resize: none;
 	padding: 0.75rem 1rem;
 }
 
@@ -159,7 +199,7 @@ input[type='radio'] {
 	& + label {
 		@include icon(false, solid);
 		@include vendor('user-select', 'none');
-		color: #{var(--color-txt)};
+		color: var(--color-txt);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -195,18 +235,19 @@ input[type='radio'] {
 
 	&:checked + label {
 		&:before {
-			background: #{var(--color-txt-bold)} !important;
-			border-color: #{var(--color-txt-bold)} !important;
-			color: #{var(--color-bg)};
+			background: var(--color-txt-bold) !important;
+			border-color: var(--color-border) !important;
+			color: var(--color-bg);
+			font-weight: 900; // because content elem '\f00c' is only in 900font
 			content: '\f00c';
 		}
 	}
 
 	&:focus + label {
 		&:before {
-			background: #{var(--color-bg-highlight)};
-			border-color: #{var(--color-txt-bold)};
-			box-shadow: 0 0 0 $size-border-width #{var(--color-txt-bold)};
+			background: var(--color-bg-highlight);
+			border-color: var(--color-border);
+			box-shadow: 0 0 0 $size-border-width var(--color-txt-bold);
 		}
 	}
 }
@@ -228,26 +269,30 @@ input[type='radio'] {
 }
 
 ::-webkit-input-placeholder {
-	color: #{var(--color-txt-light)} !important;
+	color: var(--color-txt-light) !important;
 	opacity: 1;
 }
 
 :-moz-placeholder {
-	color: #{var(--color-txt-light)} !important;
+	color: var(--color-txt-light) !important;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #{var(--color-txt-light)} !important;
+	color: var(--color-txt-light) !important;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #{var(--color-txt-light)} !important;
+	color: var(--color-txt-light) !important;
 	opacity: 1;
 }
 
 .formerize-placeholder {
-	color: #{var(--color-txt-light)} !important;
+	color: var(--color-txt-light) !important;
 	opacity: 1;
+}
+
+::-webkit-calendar-picker-indicator {
+	background-image: url('../svg/calendar.svg');
 }

@@ -64,6 +64,19 @@ export class Client {
         $closeBtn.on('click', _closeFc);
         $closeX.on('click', _closeFc);
 
+        // contact form
+        const $categoryBtn = $('#ct-category');
+        const $datePicker = $('#date-picker');
+        $categoryBtn.on('change', (pEvt) => {
+            const currTrg = $(pEvt.currentTarget);
+            const lValue = currTrg.val();
+            if (lValue === '0') { // booking
+                $datePicker.slideDown('fast');
+            } else if (lValue === '1') {
+                $datePicker.slideUp('fast');
+            }
+        });
+
         // initially hide main and, articles.
         $main.hide();
         $main_articles.hide();

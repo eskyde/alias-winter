@@ -3,9 +3,9 @@
 // base color sheme
 $color-primary: #bef;
 $color-secondary: #4ab;
-$color-text: #E5E4E2; // platinum
+$color-text: #e5e4e2; // platinum
 
-$color-bg: rgba(0,1,1,1);
+$color-bg: rgba(0, 1, 1, 1);
 
 $color-bg-highlight: rgba(255, 255, 255, 0.1);
 $color-bg-active: rgba(255, 255, 255, 0.2);
@@ -14,6 +14,8 @@ $color-txt-lighten: rgba(255, 255, 255, 0.5);
 
 $bg-overlay: rgba(19, 21, 25, 0.5);
 $bg-overlay-fo: rgba(19, 21, 25, 1);
+
+$color-error: #ff2222;
 
 // pallette
 :root {
@@ -30,8 +32,10 @@ $bg-overlay-fo: rgba(19, 21, 25, 1);
 
 	--color-txt: #{var(--color-text)};
 	--color-txt-bold: #{var(--color-primary)};
-	--color-txt-light: #{lighten($color-text, 5%)};
+	--color-txt-light: #{darken($color-text, 30%)};
 
 	--bg-overlay: #{$bg-overlay};
 	--bg-overlay-fo: #{$bg-overlay-fo};
+
+	--color-error: #{var($color-error)};
 }

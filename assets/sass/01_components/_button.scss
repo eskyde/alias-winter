@@ -10,15 +10,17 @@ button,
 		'background-color #{$duration-transition} ease-in-out, color #{$duration-transition} ease-in-out'
 	);
 	background-color: transparent;
+	
 	border-radius: $size-border-radius;
-	border: 0;
-	box-shadow: inset 0 0 0 $size-border-width #{var(--color-border)};
-	color: #{var(--color-txt)};
+	border: $size-border-width solid var(--color-border);
+
+	color: var(--color-txt);
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.8rem;
 	font-weight: $font-weight-regular;
 	height: $size-elem-hgth;
+	min-width: calc(2.5 * $size-elem-hgth); 
 	letter-spacing: $font-letter-spacing;
 	line-height: $size-elem-hgth;
 	outline: 0;
@@ -29,11 +31,11 @@ button,
 	white-space: nowrap;
 
 	&:hover {
-		background-color: #{var(--color-bg-highlight)};
+		background-color: var(--color-bg-highlight);
 	}
 
 	&:active {
-		background-color: #{var(--color-bg-active)};
+		background-color: var(--color-bg-active);
 	}
 
 	&.icon {
@@ -75,5 +77,5 @@ input[type='submit'],
 input[type='reset'],
 input[type='button'],
 button {
-	line-height: calc(#{$size-elem-hgth} - 2px);
+	line-height: calc($size-elem-hgth - 2px);
 }

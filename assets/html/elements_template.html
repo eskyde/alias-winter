@@ -3,7 +3,7 @@
 <html lang="de:De">
 
 <head>
-	<title>RuhrDÿne e.V.</title>
+	<title>Tobbes' Template</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../../gen/alias_winter/assets/css/main.css" />
@@ -14,25 +14,32 @@
 	<noscript>
 		<link rel="stylesheet" href="../../gen/alias_winter/assets/css/main.css" />
 	</noscript>
+
+	<script src="../js/handlebars.min.js"></script>
+	<script src="../js/breakpoints.min.js"></script>
+	<script src="../js/jquery.legacy.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/toastr.min.js"></script>
+	<script src="../../gen/alias_winter/assets/js/client.js"></script>
 </head>
 
 <body class="is-preload">
 
 	<!-- Wrapper -->
-	<div id="wrapper">
+	<div class="wrapper">
 
 		<!-- Header -->
-		<header id="header">
+		<header class="header">
 			<div class="logo">
 				<span class="icon fa-gem" style="display: none;"></span>
-				<img src="assets/img/ruhrdyne_logo.svg" alt="RuhrDÿne Logo">
+				<img src="../img/aliaswinterwhite.svg" alt="Alias Winter Logo">
 			</div>
-			<div class="content">
+			<!-- <div class="content">
 				<div class="inner">
-					<h1>RuhrDÿne</h1>
+					<h1>ALIAS WINTER</h1>
 					<p><a href="#" class="pointer-none">"Mucke, Bier & Freunde"</a></p>
 				</div>
-			</div>
+			</div> -->
 			<nav>
 				<ul>
 					<li><a href="#elements">Elements</a></li>
@@ -41,7 +48,7 @@
 		</header>
 
 		<!-- Main -->
-		<div id="main">
+		<div class="main">
 
 			<!-- Elements -->
 			<article id="elements">
@@ -298,20 +305,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		</div>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<p class="copyright">&copy; eskyde pwrd by <a href="https://html5up.net" target="_blank">HTML5 UP</a></p>
+		<footer class="footer">
+			<p>Some bottom text</p>
 		</footer>
 
 	</div>
 
 	<!-- BG -->
-	<div id="bg"></div>
-
-	<!-- Scripts -->
-	<script src="../../gen/assets/js/jquery.min.js"></script>
-	<script src="../../gen/assets/js/breakpoints.min.js"></script>
-	<script src="../../gen/assets/js/client.js"></script>
-	<script src="../../gen/assets/js/toastr.min.js"></script>
+	<div class="bg"></div>
 
 	<script type="text/javascript">
 		Client.start();

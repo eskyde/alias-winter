@@ -30,6 +30,10 @@
 
     .cookies-info {
         padding: 0 2rem;
+
+        @include breakpoint('<=small') {
+            padding: 0 1em;
+        }
     }
 
     .close {
@@ -40,7 +44,7 @@
 
     .button {
         background-position: center;
-        transition: background .3s ease-in;
+        transition: background 0.3s ease-in;
 
         &:hover {
             background: #bef radial-gradient(circle, transparent 1%, #bef 1%) center/15000%;
@@ -54,6 +58,6 @@
     }
 
     &.animate {
-        animation: closeCookieWindow .9s ease-in-out forwards;
+        animation: closeCookieWindow 0.9s ease-in-out forwards;
     }
 }

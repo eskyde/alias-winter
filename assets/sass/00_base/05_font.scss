@@ -12,6 +12,8 @@
 }
 
 // font
+$font-base-size: 1rem;
+
 $font-weight-light: 300;
 $font-weight-regular: 500;
 $font-weight-bold: 600;
@@ -19,6 +21,8 @@ $font-weight-bold: 600;
 $font-family-default: 'Titillium Web', sans-serif;
 $font-family-bahn: 'Bahnschrift', sans-serif;
 $font-family-mono: 'Courier New', monospace;
+$font-family-fa-brands: 'Font Awesome 5 Brands', sans-serif;
+$font-family-fa-free: 'Font Awesome 5 Free', sans-serif;
 
-$font-letter-spacing: 0.17rem;
+$font-letter-spacing: 0.15rem;
 $font-letter-spacing-heading: 0.3rem;
