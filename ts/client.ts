@@ -70,9 +70,9 @@ export class Client {
         $categoryBtn.on('change', (pEvt) => {
             const currTrg = $(pEvt.currentTarget);
             const lValue = currTrg.val();
-            if (lValue === '0') { // booking
+            if (lValue === 'booking') { // booking
                 $datePicker.slideDown('fast');
-            } else if (lValue === '1') {
+            } else if (lValue === 'other') {
                 $datePicker.slideUp('fast');
             }
         });

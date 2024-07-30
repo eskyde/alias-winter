@@ -59,8 +59,8 @@ module.exports = function (grunt) {
           // copy template to index.html
           {
             nonull: true,
-            src: 'assets/html/template.html',
-            dest: 'gen/alias_winter/index.html',
+            src: 'assets/html/template.php',
+            dest: 'gen/alias_winter/index.php',
           },
           { // copy icons
             nonull: false,
@@ -103,7 +103,7 @@ module.exports = function (grunt) {
             expand: true,
             filter: 'isFile',
           },
-          { // copy icons
+          { // copy mp4
             nonull: false,
             src: 'assets/mp4/*',
             dest: 'gen/alias_winter/assets/mp4/',
@@ -111,7 +111,7 @@ module.exports = function (grunt) {
             expand: true,
             filter: 'isFile',
           },
-          { // copy icons
+          { // copy SVG's
             nonull: false,
             src: 'assets/svg/*',
             dest: 'gen/alias_winter/assets/svg/',
@@ -119,6 +119,14 @@ module.exports = function (grunt) {
             expand: true,
             filter: 'isFile',
           }
+          // ,{ // copy PHP files
+          //   nonull: false,
+          //   src: 'assets/php/*',
+          //   dest: 'gen/alias_winter/',
+          //   flatten: true,
+          //   expand: true,
+          //   filter: 'isFile',
+          // }
         ],
       },
     },

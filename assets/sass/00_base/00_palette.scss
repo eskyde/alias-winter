@@ -37,5 +37,5 @@ $color-error: #ff2222;
 	--bg-overlay: #{$bg-overlay};
 	--bg-overlay-fo: #{$bg-overlay-fo};
 
-	--color-error: #{var($color-error)};
+	--color-error: #{$color-error};
 }
