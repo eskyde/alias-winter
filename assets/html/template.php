@@ -6,7 +6,7 @@
 	<title>ALIAS WINTER</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Alternative Rock-Band from Bochum Germany">
+	<meta name="description" content="ALIASWINTER, ALIAS WINTER, Alternative Rock-Band from Bochum Germany">
 
 	<!-- STYLERSHEETZ -->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -245,7 +245,7 @@ Message: ' . $_POST["ct-message"],
 								<label for="ct-message">Message</label>
 								<textarea name="ct-message" id="ct-message" placeholder="Schreib uns was nettes..." rows="6"></textarea>
 							</div>
-							<!-- 
+							<!--
 							<div class="field half">
 								<input type="checkbox" id="ct-copy" name="ct-copy">
 								<label for="ct-copy">Email me a copy</label>
