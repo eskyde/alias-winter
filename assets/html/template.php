@@ -218,7 +218,7 @@ Message: ' . $_POST["ct-message"],
 					}
 					?>
 
-					<form method="post" action="index.php#contact">
+					<form method="post" action="index.php?ct-mail=true#contact">
 						<div class="fields">
 							<div class="field half">
 								<input type="text" name="ct-name" id="ct-name" value="" placeholder="Jane Doe">

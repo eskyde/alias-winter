@@ -293,6 +293,13 @@ input[type='radio'] {
 	opacity: 1;
 }
 
-::-webkit-calendar-picker-indicator {
+::-webkit-calendar-picker-indicator { // browser
 	background-image: url('../svg/calendar.svg');
+}
+
+::-webkit-date-and-time-value { // mobile
+    background-image: url(../svg/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 0;
 }

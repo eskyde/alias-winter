@@ -349,13 +349,6 @@ export class Client {
 
         });
 
-        // Events.
-        $body.on('click', () => {
-            // Article visible? Hide.
-            if ($body.hasClass('is-article-visible'))
-                _hide(true);
-        });
-
         $window.on('keyup', (event) => {
 
             switch (event.keyCode) {
@@ -421,6 +414,12 @@ export class Client {
             $window.on('load', function () {
                 _show(location.hash.substring(1), true);
             });
+
+        if (location.search != '' && location.search != '?') {
+            if (location.search.indexOf('ct-mail') !== -1) {
+                toastr.info('Deine Anfrage wurde versendet!');
+            }
+        }
 
         // show page (remove-overlay)
         $body.removeClass('is-preload');
