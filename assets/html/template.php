@@ -10,7 +10,7 @@
 
 	<!-- STYLERSHEETZ -->
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/toastr.css" />
+	<link rel="stylesheet" href="assets/css/awtoastr.css" />
 	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 
 	<!-- ICONS -->
@@ -201,7 +201,7 @@
 
 					if (isset($_POST['submit'])) {
 
-						if (mail(
+						mail(
 							'kontakt@alias-winter.de',
 							'Kontaktformular',
 							'Name: ' . $_POST["ct-name"] . '
@@ -210,11 +210,7 @@ Category: ' . $_POST["ct-category"] . '
 Datum: ' . $_POST["ct-date"] . '
 Message: ' . $_POST["ct-message"],
 
-						)) {
-							echo "<script>console.info('Mail sent!' );</script>";
-						} else {
-							echo "<script>console.error('Error sending mail!' );</script>";
-						}
+						);
 					}
 					?>
 
