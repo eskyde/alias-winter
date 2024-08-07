@@ -60,6 +60,7 @@
 		<ul class="icons">
 			<li><a href="https://www.facebook.com/aliaswinter" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 			<li><a href="https://www.instagram.com/alias_winter" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://open.spotify.com/intl-de/track/6WI5ulpQLpiJZOYp4LT55x?si=6999c8ca44024836" target="_blank" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li>
 		</ul>
 	</div>
 
@@ -171,12 +172,14 @@
 
 				<h1 class="major">Misc</h1>
 
-				<p>Wir arbeiten daran, unser Album aufzunehmen. Wenn alles gut geht, gibt es unser Material schon sehr
-					bald auf allen Plattformen zu hören. Die erste Single mit Video ist bereits in der Pipepline. Bis
-					dahin
-					gibt es "leider" erstmal nur eine winzige Auswahl. Hier spielen wir unseren Song "Freiheitsdrang"
-					live
-					im U27 Bochum.</p>
+				<p>Wir arbeiten daran, unser erstes Album aufzunehmen. Wenn alles gut geht, gibt es unser Material schon sehr
+					bald auf allen Plattformen zu hören. Bis dahin gibt es "leider" erstmal nur eine kleine Auswahl.
+					Gebt euch unsere erste Single mit Video "Gletscher" - auch auf <a href="https://open.spotify.com/intl-de/track/6WI5ulpQLpiJZOYp4LT55x?si=6999c8ca44024836" target="_blank">Spotify</a> </p>
+
+				<iframe class="yt-video" src="https://www.youtube.com/embed/vj4s34S7n4Y?si=DPYnE1OjpYDlfvYW" title="ALIAS WINTER - GLETSCHER" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				<p>Im U27 in Bochum haben wir einen Gig gespielt und alles in Eigenregie aufgenommen und produziert.
+					Da bringen wir in Zukuft noch ein, zwei Videos von raus. Bis dahin gebt euch gern den Song "Freiheitsdrang"</p>
 
 				<iframe class="yt-video" src="https://www.youtube.com/embed/SPqakjBvbU4?si=xKpsoV7KZG1iheGB" title="Freiheitsdrang - Live U27" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -263,6 +266,7 @@ Message: ' . $_POST["ct-message"],
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/aliaswinter" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.instagram.com/alias_winter" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://open.spotify.com/intl-de/track/6WI5ulpQLpiJZOYp4LT55x?si=6999c8ca44024836" target="_blank" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li>
 					</ul>
 
 				</section>
