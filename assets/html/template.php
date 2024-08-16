@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 
 	<!-- ICONS -->
+	<link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png">
@@ -35,7 +36,7 @@
 	<meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#011">
 	<link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
+	
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
