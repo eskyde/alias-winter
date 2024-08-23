@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 
 	<!-- ICONS -->
-	<link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+	<!-- <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico"> -->
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png">
@@ -146,7 +146,7 @@
 						<tbody>
 							<tr>
 								<td>21.09.2024</td>
-								<td>RuhrDÿne Open-Air "umsonst und draußen" :<br> Essen - Frohnhauser-Markt</td>
+								<td>RuhrDÿne Open-Air "Fun in Frohnhausen" :<br> Essen - Frohnhauser-Markt</td>
 								<td>
 									<ul class="icons">
 										<li><a href="https://ruhrdyne.de/#events" target="_blank" class="icon solid fa-info"></a></li>
